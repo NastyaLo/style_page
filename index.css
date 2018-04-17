@@ -12,6 +12,7 @@ header {
 
 .menu {
   position: absolute;
+  min-height: 100%;
   width: 220px;
   background-color: #FFFFFF;
   box-shadow: 5px 0 4px 0 rgba(0, 0, 0, 0.2);
@@ -35,8 +36,72 @@ header {
     width: 220px; }
     .menu li:hover {
       background-color: #FFFFFF;
-      box-shadow: inset 5px 0 25px #CBCBCB;
+      box-shadow: inset 5px 0 20px #CBCBCB;
       cursor: pointer; }
+
+.menu__list_drop-down {
+  height: 100%;
+  opacity: 0;
+  cursor: default;
+  position: absolute;
+  text-align: left;
+  height: auto;
+  width: 190px;
+  left: 220px;
+  top: 0;
+  padding-top: 50px;
+  padding-left: 30px;
+  background-color: #F9F9F9;
+  box-shadow: inset 5px 0 4px rgba(0, 0, 0, 0.2), 5px 0 4px 0 rgba(0, 0, 0, 0.2); }
+  .menu__list_drop-down li {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .menu__list_drop-down ul {
+    margin-bottom: 30px; }
+  .menu__list_drop-down li:hover {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 #F9F9F9;
+    cursor: pointer; }
+
+.menu__list_drop-down__section__title {
+  display: inline-block;
+  color: #47A75F;
+  font-family: "Code Pro Bold";
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 40px; }
+  .menu__list_drop-down__section__title:hover {
+    cursor: pointer; }
+
+.menu__list_drop-down__section__title:first-child {
+  margin-bottom: 45px; }
+
+.menu__list_drop-down__section__title:last-child {
+  margin-bottom: 88px; }
+
+.menu__list_drop-down__section__subsection__title {
+  display: inline-block;
+  color: #47A75F;
+  font-family: "Code Pro";
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .menu__list_drop-down__section__subsection__title:hover {
+    cursor: pointer; }
+
+.menu__list_drop-down__section__subsection__list li {
+  color: #757575;
+  font-family: "Conqueror Sans";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 13px;
+  text-align: left; }
+
+.menu__list-drop-down-opener:hover .menu__list_drop-down {
+  display: block;
+  transition: 0.3s;
+  opacity: 1; }
 
 .logo-green {
   margin-bottom: 60px; }
@@ -95,6 +160,9 @@ header {
 @font-face {
   font-family: "Code Pro";
   src: url(Code_Pro.otf); }
+@font-face {
+  font-family: "Code Pro Bold";
+  src: url(Code_Pro_Bold.otf); }
 @font-face {
   font-family: "Conqueror Sans";
   src: url(Conqueror_Sans.otf); }
