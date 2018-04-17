@@ -1,0 +1,118 @@
+@mixin flex-column () {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(17, 60px);
+  justify-content: space-between;
+  grid-row: auto;
+}
+
+header {
+	height: 25px;
+	background: linear-gradient(90deg, #58D176 0%, #BDF3C6 100%);
+  grid-column: 3 / -1;
+}
+
+.menu {
+  position: absolute;
+  width: 220px;
+
+  background-color: #FFFFFF;
+	box-shadow: 5px 0 4px 0 rgba(0,0,0,0.2);
+
+  @include flex-column();
+
+  padding-top: 30px;
+
+  ul {
+    padding: 0;
+    margin-bottom: 70px;
+  }
+
+  li {
+  	color: #757575;
+  	font-family: "Code Pro";
+  	font-size: 16px;
+  	line-height: 19px;
+    list-style-type: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    width: 220px;
+    &:hover {
+      background-color: #FFFFFF;
+      box-shadow: inset 5px 0 25px #CBCBCB;
+      cursor: pointer;
+    }
+  }
+}
+
+.logo-green {
+  margin-bottom: 60px;
+}
+
+.contacts {
+  @include flex-column();
+}
+
+.unload-logo {
+  width:22px;
+  height: 22px;
+  background-color: grey;
+
+  margin-bottom: 10px;
+}
+
+.contacts__number {
+  color: #757575;
+  font-family: "Conqueror Sans";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: center;
+}
+
+.work-time {
+  margin-top: 20px;
+  @include flex-column();
+}
+
+.work-time__hours {
+	color: #757575;
+	font-family: "Conqueror Sans";
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 18px;
+	text-align: center;
+}
+
+.location {
+  margin-top: 20px;
+  @include flex-column();
+  margin-bottom: 20px;
+}
+
+.address {
+  color: #757575;
+  font-family: "Conqueror Sans";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Code Pro";
+  src: url(Code_Pro.otf);
+}
+
+@font-face {
+  font-family: "Conqueror Sans";
+  src: url(Conqueror_Sans.otf);
+}
