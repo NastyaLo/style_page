@@ -1245,13 +1245,14 @@ h1 {
 
 .question {
   @include flex-column();
-  grid-row: 23;
+  grid-row-start: 23;
   grid-column: 1 / -1;
   background-color: grey;
   box-shadow: inset 0 5px 12px 0 rgba(0,93,22,0.1);
   padding-top: 100px;
   padding-left: 385px;
   align-items: flex-start;
+  height: 100%;
 }
 
 .question__title {
@@ -1261,6 +1262,81 @@ h1 {
 	font-size: 30px;
 	letter-spacing: 2.5px;
 	line-height: 37px;
+}
+
+.question__input {
+  display: grid;
+  grid-template-columns: minmax(30px, 285px) minmax(30px, 285px);
+  grid-gap: 35px;
+}
+
+.question__input__name {
+	border: 1px solid #CACACA;
+	background-color: #FFFFFF;
+  padding: 15px;
+	color: #CACACA;
+	font-family: "Conqueror Sans";
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 14px;
+  max-height: 40px;
+}
+
+.question__input__phone {
+  max-height: 40px;
+  border: 1px solid #CACACA;
+  background-color: #FFFFFF;
+  padding: 15px;
+  color: #CACACA;
+  font-family: "Conqueror Sans";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+}
+
+.question__input__message {
+  height: 120px;
+  padding: 15px;
+  color: #CACACA;
+  font-family: "Conqueror Sans";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+}
+
+.question__input__captcha {
+  margin-bottom: 20px;
+}
+
+.question__input__button {
+  @include flex-column();
+  justify-content: center;
+	height: 40px;
+	width: 200px;
+	border-radius: 20px;
+	background-color: #48A85F;
+	color: #FFFFFF;
+	font-family: "Code Pro Bold";
+	font-size: 12px;
+	line-height: 14px;
+  grid-column: 2  / 3;
+  margin-top: -65px;
+}
+
+.question__input__agreement__text {
+  color: #CACACA;
+	font-family: "Conqueror Sans";
+	font-size: 8px;
+	font-weight: 300;
+	letter-spacing: 0.8px;
+	line-height: 10px;
+}
+
+.cover {
+  grid-row: 3;
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1230px) {

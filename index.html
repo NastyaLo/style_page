@@ -453,9 +453,14 @@
   </div>
   <div class="question">
     <div class="question__title">ЗАДАЙТЕ ВОПРОС <br><span class="title-grey">НАШИМ ВРАЧАМ</span></div>
-    <div class="question__input">
-
-    </div>
+    <form class="question__input">
+      <input type="text" class="question__input__name" value="Имя">
+      <input type="text" class="question__input__phone" value="Телефон">
+      <textarea name="message" class="question__input__message">Сообщение</textarea>
+      <img class="question__input__captcha" src="recaptcha.png">
+      <div class="question__input__button">ОТПРАВИТЬ</div>
+      <div class="cover"><input class="question__input__agreement" type="checkbox" name="send" checked><span class="question__input__agreement__text">я согласен на обработку персональных данных</span></div>
+    </form>
   </div>
 </body>
 </html>
