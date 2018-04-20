@@ -1249,10 +1249,10 @@ h1 {
   grid-column: 1 / -1;
   background-color: grey;
   box-shadow: inset 0 5px 12px 0 rgba(0,93,22,0.1);
-  padding-top: 100px;
+  padding-top: 90px;
   padding-left: 385px;
   align-items: flex-start;
-  height: 100%;
+  height: 95%;
 }
 
 .question__title {
@@ -1337,6 +1337,100 @@ h1 {
   margin-top: -30px;
   display: flex;
   align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 4 / 18;
+  margin-top: 65px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  grid-row: 26;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+	color: #484848;
+	font-family: "Code Pro";
+	font-size: 10px;
+	letter-spacing: 1.67px;
+	line-height: 13px;
+}
+
+.site-map {
+  display: flex;
+  margin-right: 50px;
+  span {
+    margin-top: 1.5px;
+  }
+}
+
+.site-map__icon {
+  height: 12px;
+  width: 15px;
+  margin-right: 10px;
+  border: 1px solid #484848;
+}
+
+.impaired-vision {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  span {
+    margin-top: 1.5px;
+  }
+}
+
+.impaired-vision__icon {
+	height: 10px;
+	width: 18px;
+	background-color: #484848;
+  margin-right: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-right: 165px;
+  span {
+    margin-top: 1.5px;
+  }
+}
+
+.search__icon {
+  height: 12px;
+  width: 15px;
+  margin-right: 10px;
+  border: 1px solid #484848;
+}
+
+.agency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  margin-right: 65px;
+}
+
+.agency__logo {
+	height: 40px;
+	width: 90px;
+	background-color: #686868;
+  margin-right: 15px;
+}
+
+.agency__name {
+  display: flex;
+  align-items: center;
+  height: 50px;
+	color: #686868;
+	font-family: FavoritC;
+	font-size: 11px;
+	line-height: 16px;
+  padding-left: 15px;
+	border-left: 1px solid #545454;
 }
 
 @media (max-width: 1230px) {
