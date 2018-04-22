@@ -25,6 +25,7 @@ header {
 
 .menu {
   @include flex-column();
+  justify-content: space-around;
   position: fixed;
 
   min-height: 100%;
@@ -63,7 +64,7 @@ header {
   }
 }
 
-.menu.open_menu {
+.menu.closen_menu {
   justify-content: space-around;
   li {
     padding-top: 12px;
@@ -101,11 +102,12 @@ header {
 
 .menu__list__cover.open .menu__burger {
   margin-bottom: 0;
+  margin-top: 30px;
 }
 
 .menu__burger {
   @include flex-column();
-  margin-bottom: 80px;
+  //margin-bottom: 30px;
   width:30px;
   span {
     width: 100%;
@@ -216,7 +218,7 @@ header {
 }
 
 .logo-green {
- margin-bottom: 60px;
+ //margin-bottom: 30px;
 }
 
 .contacts {
@@ -1666,7 +1668,7 @@ footer {
   src: url(Helvetica_Neue.otf);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   body {
     grid-template-columns: 0 0 0 repeat(14, 60px);
   }

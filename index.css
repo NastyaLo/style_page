@@ -15,6 +15,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  justify-content: space-around;
   position: fixed;
   min-height: 100%;
   width: 220px;
@@ -40,9 +41,9 @@ header {
       box-shadow: inset 5px 0 20px #CBCBCB;
       cursor: pointer; }
 
-.menu.open_menu {
+.menu.closen_menu {
   justify-content: space-around; }
-  .menu.open_menu li {
+  .menu.closen_menu li {
     padding-top: 12px;
     padding-bottom: 12px;
     color: #757575;
@@ -52,7 +53,7 @@ header {
     list-style-type: none;
     text-align: center;
     width: 220px; }
-    .menu.open_menu li:hover {
+    .menu.closen_menu li:hover {
       background-color: #FFFFFF;
       box-shadow: inset 5px 0 20px #CBCBCB;
       cursor: pointer; }
@@ -70,14 +71,14 @@ header {
   display: block; }
 
 .menu__list__cover.open .menu__burger {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 30px; }
 
 .menu__burger {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 80px;
   width: 30px; }
   .menu__burger span {
     width: 100%;
@@ -150,9 +151,6 @@ header {
   display: block;
   position: absolute;
   z-index: 3; }
-
-.logo-green {
-  margin-bottom: 60px; }
 
 .contacts {
   display: flex;
@@ -1358,7 +1356,7 @@ footer {
 @font-face {
   font-family: "Helvetica Neue";
   src: url(Helvetica_Neue.otf); }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   body {
     grid-template-columns: 0 0 0 repeat(14, 60px); }
 

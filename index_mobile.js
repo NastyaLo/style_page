@@ -10,10 +10,3 @@ titleElemMobile.onclick = function() {
   line2.classList.toggle('cross');
   line3.classList.toggle('cross');
 };
-
-titleElemMobile.onmouseout = function() {
-  menuElemMobile.classList.remove('open');
-  line1.classList.remove('cross');
-  line2.classList.remove('cross');
-  line3.classList.remove('cross');
-};
