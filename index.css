@@ -1397,21 +1397,56 @@ footer {
     .base_menu .address {
       display: none; }
 
+  .menu__list__cover_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-items: stretch;
+    position: absolute;
+    background-color: white;
+    top: 145px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-column: 1 / -1;
+    box-shadow: inset 0 0 12px rgba(0, 93, 22, 0.1); }
+
   .menu__list__cover_mobile ul {
     display: none; }
 
   .menu__list__cover_mobile.open ul {
-    display: block; }
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    padding-left: 0; }
+    .menu__list__cover_mobile.open ul li {
+      width: 100%;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      color: #757575;
+      font-family: "Code Pro";
+      font-size: 25px;
+      line-height: 19px;
+      list-style-type: none;
+      text-align: center; }
+      .menu__list__cover_mobile.open ul li:hover {
+        background-color: #FFFFFF;
+        box-shadow: inset 5px 0 20px #CBCBCB;
+        cursor: pointer; }
 
   .menu__list__cover_mobile.open .menu__burger_mobile {
     margin-bottom: 0; }
 
   .menu__burger_mobile {
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 80px;
     width: 30px; }
     .menu__burger_mobile span {
       width: 100%;
@@ -1443,9 +1478,16 @@ footer {
     width: 570px; }
 
   .content__block3 {
-    justify-self: flex-start;
-    margin-left: 10px;
-    grid-column: 4 / 16; }
+    justify-self: center;
+    grid-column: 5 / 17; }
+    .content__block3 .content__block3__card {
+      width: 230px;
+      padding-left: 22px;
+      padding-right: 22px; }
+    .content__block3 .content__block3__card_1 {
+      margin-right: 0; }
+    .content__block3 .content__block3__card_2 {
+      margin-right: 0; }
 
   .content__block4__card__button {
     width: 150px;
@@ -1457,6 +1499,19 @@ footer {
     max-width: 190px; }
     .content__block4__card_1 .content__block4__img, .content__block4__card_2 .content__block4__img {
       width: 190px;
-      height: 190px; } }
+      height: 190px; }
+
+  #menu__burger__line-1.cross {
+    transform: rotate(45deg);
+    margin-bottom: 0;
+    margin-top: 10px; }
+
+  #menu__burger__line-2.cross {
+    display: none; }
+
+  #menu__burger__line-3.cross {
+    transform: rotate(-45deg);
+    margin-bottom: 0;
+    margin-top: -3px; } }
 
 /*# sourceMappingURL=index.css.map */
